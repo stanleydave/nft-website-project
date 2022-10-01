@@ -1,0 +1,456 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    width: 95vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+}
+
+nav input {
+    width: 25vw;
+    padding: 1.5rem;
+    margin-right: 3rem;
+}
+
+nav button {
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+
+.header-images {
+    display: grid;
+    grid-template-areas: 
+        "nisha nisha spunky shredded super"
+        "nisha nisha redape disk duck"
+    ;
+    height: 80vh;
+    width: 95vw;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.header-images div {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-images p {
+    font-size: 2.4rem;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 50%;
+}
+
+.header-images div:nth-child(1) {
+    background-image: url(./img/nisha.png);
+    grid-area: nisha;
+}
+
+.header-images div:nth-child(2) {
+    background-image: url(./img/spunky.png);
+    grid-area: spunky;
+}
+
+.header-images div:nth-child(3) {
+    background-image: url(./img/shredded.png);
+    grid-area: shredded;
+}
+
+.header-images div:nth-child(4) {
+    background-image: url(./img/super.png);
+    grid-area: super;
+}
+
+.header-images div:nth-child(5) {
+    background-image: url(./img/redape.png);
+    grid-area: redape;
+}
+
+.header-images div:nth-child(6) {
+    background-image: url(./img/disk.png);
+    grid-area: disk;
+}
+
+.header-images div:nth-child(7) {
+    background-image: url(./img/duck.png);
+    grid-area: duck;
+}
+
+.section-1 {
+    background-color: white;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.section-1 .trending {
+    text-align: center;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.trending h2{
+    font-size: 3.3rem;
+    margin-bottom: 2rem;
+}
+
+.trending h2 span{
+    color: #00AAA4;
+}
+
+.trending p{
+    font-size: 1.6rem;
+    color: #00AAA4;
+    margin-bottom: 6rem;
+}
+
+.trending-coins img{
+    width: 7rem;
+    margin-bottom: .5rem;
+}
+
+.trending-coins div {
+    border: 1px solid #00AAA4;
+    /* padding: 2rem 4rem 1rem 4rem; */
+    margin: 0 2rem;
+    border-radius: 1rem;
+    width: 32%;
+    padding: 1rem .5rem;
+}
+
+.trending-coins {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.trending-coin-title{
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+
+.trending-coins .price{
+    font-size: 1.6rem;
+}
+
+.trending-coins .percentage{
+    font-size: 1.6rem;
+    color: #00AAA4;
+}
+
+.trending-coins div:nth-child(2){
+    position: relative;
+    bottom: 2rem;
+}
+
+.trending-coin-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 85vw;
+    margin: 0 auto;
+    margin-top: 3rem;
+    row-gap: 30%;
+}
+
+.trending-coin-grid > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #00AAA4;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 70%;
+    height: 130%;
+    transform: translateX(20%);
+}
+
+.price-name{
+    margin-right: auto;
+}
+
+.trending-coin-grid img{
+    margin-right: .5rem;
+    width: .5rem;
+}
+
+.price-name + p{
+    color: #00AAA4;
+}
+
+.section-2{
+    background-color: black;
+    margin-top: 7%;
+}
+
+.section-2 h2{
+    color: white;
+    font-size: 3.3rem;
+    text-align: center;
+}
+
+.collection-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 95vw;
+    margin: 0 auto;
+    background-color: black;
+    gap: 3rem;
+}
+
+.coin-info{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.background img{
+    width: 100%;
+    
+}
+
+.coin-info > div{
+    border: 1px solid #00AAA4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.coin-info > img{
+    width: 3rem;
+}
+
+.coin-info > div > div{
+    margin: 0 2rem O 1rem;
+} 
+
+.background {
+    position: relative;
+}
+
+.background p {
+    position: absolute;
+    bottom: .5rem;
+    left: .5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.section-2 a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #00AAA4 ;
+    border-radius: 3rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .5rem 4rem;
+    margin-bottom: 3rem;
+}
+
+.section-2 article p{
+    font-size: 12px;
+    color: rgb(160,160,160);
+    font-weight: bold;
+    margin: 10px;
+}
+
+.section-2 article .per{
+    color: #00AAA4;
+}
+
+.section-2 a:hover {
+    border-color: red;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.explore{
+    margin-top: 4%;
+}
+
+/* ---------------SECTION 3------------- */
+
+.section-3 {
+    margin: 2rem;
+}
+
+.section-3 h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: grey;
+}
+
+.section-3 .buy-now{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-3 .buynow{
+    font-size: 12px;
+    color: #00AAA4;
+    font-weight: bold;
+}
+
+.section-3 .ptag2{
+    font-size: 12px;
+    color: rgb(160,160,160);
+    font-weight: bold;
+}
+
+.section-3-grid-container {
+    width: 95vw;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+.section-3-grid-container article {
+    border: 1px solid grey;
+    border-radius: 1rem;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 1rem 2.5rem;
+}
+
+.section-3-grid-container .img2 {
+    position: relative;
+    right: 1.2rem;
+}
+
+.section-3-grid-container .img3 {
+    position: relative;
+    right: 2.3rem;
+}
+
+.section-3-grid-container .more {
+    position: relative;
+    left: 45%;
+
+}
+
+article + div { 
+    color: red;
+}
+
+@media (max-width: 900px){
+    nav div{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 3rem;
+    }
+    .header-images {
+        grid-template-areas: 
+        "nisha spunky shredded"
+        "nisha super redape"
+        "disk . duck";
+    }
+}
+
+.last-section{
+    /* display: flex; */
+    /* background-color: #00AAA4; */
+    margin-top: 10%;
+    width: 100%;
+    /* padding: 50px 15%; */
+}
+
+.last-section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.last-section1 p{
+    font-size: 12px;
+    color: rgb(160,160,160);
+    font-weight: bold;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apps{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom{
+    display: flex;
+    right: 30%;
+    margin: 1rem 2rem;
+    justify-content: space-between;
+}
+
+.bottom p{
+    font-size: 12px;
+    color: rgb(160,160,160);
+    font-weight: bold;
+}
+
+.line{
+    margin-top: 1rem;
+    width: 700px;
+}
+
+.kaaf{
+margin-left: 2rem;
+}
